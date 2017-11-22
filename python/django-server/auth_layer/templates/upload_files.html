@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+  <div class="form-group">
+    <form id="form-upload">
+      <input type="file" name="upload" id="upload_0">
+    </form>
+    <div>
+      <button onclick="addInputFile()" type="button" class="btn btn-default btn-sm">Add</button>
+    </div>
+    <div>
+      <button onclick="uploadFiles()" type="button" class="btn btn-primary btn-sm">Upload</button>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "sftp_ui",
+            "script": "npm",
+            "args" : "start"
+        }
+    ]
+}

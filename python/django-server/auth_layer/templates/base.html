@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- all css files -->
+  <link rel="stylesheet" type="text/css" href="{% static 'common/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'common/css/bootstrap-theme.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'common/css/jquery-ui.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'common/css/jquery-ui.structure.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'auth_layer/css/main.css' %}">
+
+  <!-- all js files includes jquery -->
+  <script type="text/javascript" src="{% static 'common/js/jsonformatter.js' %}"></script>
+  <script type="text/javascript" src="{% static 'common/js/jquery-ui.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'common/js/bootstrap.min.js' %}"></script>
+
+</head>
+<body>
+  
+  {% block content %} {% endblock %}
+
+  <!-- main js file -->
+  <script type="text/javascript" src="{% static 'auth_layer/js/main.js' %}"></script>
+
+</body>
+</html>

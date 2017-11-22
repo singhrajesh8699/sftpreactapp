@@ -1,0 +1,33 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="ISO-8859-1" />  
+</head>
+<script type="text/javascript">
+ function passmatch(){
+    var pass=document.getElementById('pass').value;
+    var cpass=document.getElementById('cpass').value;
+
+    if(pass!='' && pass==cpass){
+      document.getElementById("msg").innerHTML="password match";
+    }else{
+      document.getElementById("msg").innerHTML="password not match";
+    }
+ }
+</script> 
+ <body> 
+  <form action="/signup" method="post">  
+         Company Name:<input type="text" name="cname"><br> 
+         Username:<input type="text" name="username"><br> 
+         Password:<input type="password" name="password" id="pass"><br>
+         Confirm Password:<input type="password" name="password2" id="cpass" onblur="passmatch()">
+         <span id="msg"></span><br> 
+         Email:<input type="email" name="email"><br>
+         Role:<select defaultValue="admin" name="value">
+                 <option value="admin">admin</option>
+                 <option value="client">client</option>
+              </select> 
+               <input type="submit" value="login">  
+  </form>  
+ </body>  
+</html> 
